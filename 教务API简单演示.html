@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://test.huii.top/jwapi.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教务API简单演示</title>
+</head>
+
+<body>
+    <h1>项目简单演示</h1>
+    <hr>
+    <h3>登录</h3>
+    <form action="http://127.0.0.1/login" method="post">
+        username<input type="text" name="username" id=""><br> password
+        <input type="password" name="password" id=""><br>
+        <input type="submit" value="登录">
+    </form>
+
+
+    <hr>
+    <h3>踢设备</h3>
+    <form action="http://127.0.0.1/kick" method="post">
+        <input type="submit" value="踢除设备">
+    </form>
+
+
+    <hr>
+    <h3>获取成绩</h3>
+    <form action="http://127.0.0.1/score" method="post">
+        semestercode<input type="text" name="semestercode" id="" value="all"><br>
+        <input type="submit" value="成绩">
+    </form>
+
+    <hr>
+    <h3>经历过的学期</h3>
+    <form action="http://127.0.0.1/scodes" method="post">
+        <input type="submit" value="获得">
+    </form>
+
+
+    <hr>
+    <h3>获取考试信息</h3>
+    <form action="http://127.0.0.1/exam" method="post">
+        semestercode<input type="text" name="semestercode" id="" value="036"><br>
+        <input type="submit" value="考试信息">
+    </form>
+
+    <hr>
+    <h3>获取课程表</h3>
+    <form action="http://127.0.0.1/schedule" method="post">
+        semestercode<input type="text" name="semestercode" id="" value="036"><br> weekIndx
+        <input type="text" name="weekIndx" id="" value="16"><br>
+        <input type="submit" value="课程表">
+    </form>
+
+    <hr>
+    <h3>(新)获取课程表</h3>
+    <form action="http://127.0.0.1/getschedule" method="post">
+        semestercode<input type="text" name="semestercode" id="" value="037"><br> weekIndx
+        <input type="submit" value="课程表">
+    </form>
+
+    <hr>
+    <h3>获取个人信息</h3>
+    <form action="http://127.0.0.1/info" method="post">
+        <input type="submit" value="个人信息">
+    </form>
+
+    <hr>
+    <h3>修改个人信息</h3>
+    <form action="http://127.0.0.1/edit" method="post">
+        phone<input type="text" name="phone" id=""><br> email
+        <input type="email" name="email" id=""><br>
+        <input type="submit" value="修改信息">
+    </form>
+
+    <hr>
+    <h3>获取当前周数、学期</h3>
+    <form action="http://127.0.0.1/now" method="post">
+        <input type="submit" value="当前信息">
+    </form>
+
+    <hr>
+    <h3>获取各学期及各周详细信息</h3>
+    <form action="http://127.0.0.1/datas" method="post">
+        <input type="submit" value="基础信息">
+    </form>
+
+    <hr>
+    <h3>退出登录</h3>
+    <form action="http://127.0.0.1/logout" method="post">
+        <input type="submit" value="退出">
+    </form>
+
+    <hr> All Rights Received By HUII
+
+
+</body>
+
+</html>

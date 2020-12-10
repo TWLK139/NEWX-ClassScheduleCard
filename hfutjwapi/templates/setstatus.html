@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>设置报名表状态</title>
+    <link rel="stylesheet" href="https://java.huii.top/layui/css/layui.css">
+</head>
+<body>
+<h1 style="text-align: center">设置状态码</h1>
+<form class="layui-form">
+    <div class="layui-form-item">
+    <label class="layui-form-label">最新版本号</label>
+    <div class="layui-input-inline">
+      <input type="text" name="version" value="{{ version }}" required lay-verify="required" placeholder="请最新版本号" autocomplete="off" class="layui-input" id="version">
+    </div>
+    <div class="layui-form-mid layui-word-aux">版本号为整数(必须大于之前版本号)</div>
+  </div>
+    <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="formDemo">立即修改版本号</button>
+    </div>
+  </div>
+</form>
+<form class="layui-form">
+    <div class="layui-form-item">
+    <label class="layui-form-label">状态开关</label>
+    <div class="layui-input-block">
+      <input type="checkbox" name="open" lay-skin="switch" lay-filter="switchTest" lay-text="开启|关闭"{% if status == 0 %}checked{% endif %}>
+    </div>
+  </div>
+</form>
+
+    <script src="https://java.huii.top/layui/layui.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        layui.use(['form', 'layedit', 'laydate'], function(){
+  var form = layui.form;
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+      const version = $("#version").val();
+    $.ajax({
+          url:'',
+          method:"POST",
+          data:{
+              version:version
+          },
+          success:function (res) {
+              alert(res.msg);
+              location.reload(true);
+          }});
+  });
+  form.on('switch(switchTest)', function(data){
+      console.log(this.checked);
+      $.ajax({
+          url:'',
+          method:"POST",
+          data:{
+              status:this.checked
+          },
+          success:function (res) {
+            layer.msg(res.msg)
+          }});
+        });})
+    </script>
+<script>
+//Demo
+layui.use('form', function(){
+  var form = layui.form;
+
+
+});
+</script>
+</body>
+</html>

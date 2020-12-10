@@ -1,0 +1,199 @@
+教务模拟登录思路
+
+---------------
+获取基本信息
+---------------
+地址：http://jxglstu.hfut.edu.cn:7070/appservice/home/appLogin/login.action
+方式：post
+传值：
+password: 教务密码通过base64加密
+username: 学号
+identity:	0
+-----
+userKey将在此处获得，在传回的字典类型 dt['obj']['userKey']中。当然， dt['obj']还含有其他个人信息（邮箱、班级、姓名专业等个人信息，可自行体验）
+
+
+
+---------------
+课表
+---------------
+http://jxglstu.hfut.edu.cn:7070/appservice/home/schedule/getWeekSchedule.action
+方式：post
+传值：
+userKey：从上面获取
+identity：0
+projectId：23
+semestercode：036（第几学期。目前2019-2020第二学期为036）
+weekIndx	：8（第几周）（可以不填，会返回本学期所有课程，按照一周上课时间排序，一周上几次就会出现几次，但是有个问题，如果有的课有两个上课地点，如英语，就无法分辨那周在哪上。所以建议传值的时候也传这个项）
+
+
+---------------
+获取成绩
+---------------
+http://jxglstu.hfut.edu.cn:7070/appservice/home/course/getSemesterScoreList.action
+方式：post
+传值：
+projectId=23
+userKey=上面获取
+identity=0
+semestercode=035（第几学期。2019-2020第一学期为035）
+
+
+---------------
+获取考试信息
+---------------
+http://jxglstu.hfut.edu.cn:7070/appservice/home/course/getExamArrangement.action
+方式：get
+传值：
+projectId=23
+userKey=上面获取
+identity=0
+semestercode=036
+
+
+---------------
+修改手机邮箱
+---------------
+http://jxglstu.hfut.edu.cn:7070/appservice/home/appLogin/editPhoneOrEmail.action
+方式：post
+传值：
+phone=手机号
+email=电子邮箱
+userKey=上面获取
+identity=0
+
+
+---------------
+获取学期与周数
+---------------
+http://jxglstu.hfut.edu.cn:7070/appservice/home/publicdata/getSemesterAndWeekList.action
+方式：post
+传值：
+projectId=23
+userKey=上面获取
+
+
+
+
+
+
+
+
+
+
+附录：
+---------------
+获取学期号
+---------------
+地址：http://jxglstu.hfut.edu.cn:7070/appservice/home/publicdata/getSemesterList.action
+方式：get
+传值：
+projectId：23
+userKey：从上面获取
+
+
+
+
+
+
+
+{
+	"code": 200,
+	"msg": "查询成功！",
+	"salt": null,
+	"obj": {
+		"business_data": {
+			"cur_semester_code": "036",
+			"semesters": [{
+				"code": "037",
+				"name": "2020-2021学年第一学期",
+				"season": "秋",
+				"week_start_at": 1,
+				"year": "2020-2021学年"
+			}, {
+				"code": "036",
+				"name": "2019-2020学年第二学期",
+				"season": "春",
+				"week_start_at": 1,
+				"year": "2019-2020"
+			}, {
+				"code": "035",
+				"name": "2019-2020学年第一学期",
+				"season": "秋",
+				"week_start_at": 1,
+				"year": "2019-2020"
+			}, {
+				"code": "034",
+				"name": "2018-2019学年第二学期",
+				"season": "春",
+				"week_start_at": 1,
+				"year": "2018-2019"
+			}, {
+				"code": "033",
+				"name": "2018-2019学年第一学期",
+				"season": "秋",
+				"week_start_at": 1,
+				"year": "2018-2019"
+			}, {
+				"code": "032",
+				"name": "2017-2018学年第二学期",
+				"season": "春",
+				"week_start_at": 1,
+				"year": "2017-2018"
+			}, {
+				"code": "031",
+				"name": "2017-2018学年第一学期",
+				"season": "秋",
+				"week_start_at": 1,
+				"year": "2017-2018"
+			}, {
+				"code": "030",
+				"name": "2016-2017学年第二学期",
+				"season": "春",
+				"week_start_at": 1,
+				"year": "2016-2017"
+			}, {
+				"code": "029",
+				"name": "2016-2017学年第一学期",
+				"season": "秋",
+				"week_start_at": 1,
+				"year": "2016-2017"
+			}, {
+				"code": "028",
+				"name": "2015-2016学年第二学期",
+				"season": "春",
+				"week_start_at": 1,
+				"year": "2015-2016"
+			}, {
+				"code": "027",
+				"name": "2015-2016学年第一学期",
+				"season": "秋",
+				"week_start_at": 1,
+				"year": "2015-2016"
+			}, {
+				"code": "026",
+				"name": "2014-2015学年第二学期",
+				"season": "春",
+				"week_start_at": 1,
+				"year": "2014-2015"
+			}, {
+				"code": "025",
+				"name": "2014-2015学年第一学期",
+				"season": "秋",
+				"week_start_at": 1,
+				"year": "2014-2015"
+			}, {
+				"code": "024",
+				"name": "2013-2014学年第二学期",
+				"season": "春",
+				"week_start_at": 1,
+				"year": "2013-2014"
+			}]
+		},
+		"err_code": "00000",
+		"err_msg": ""
+	},
+	"token": null,
+	"error": null
+}
+

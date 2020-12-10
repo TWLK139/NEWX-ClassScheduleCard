@@ -1,0 +1,34 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#title {
+	width: 100%;
+	padding: 10px 0 0 0;
+	text-align: center;
+	font-size: 40px;
+}
+#chartBox {
+	width: 100%;
+	height: 80%;
+}
+#chart {
+	width: 100%;
+	height: 100%;
+}
+.settingPanel {
+	width: 98%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.setInput {
+	width: 80%;
+}
+.setLabel {
+	width: 10%;
+	text-align: center;
+}

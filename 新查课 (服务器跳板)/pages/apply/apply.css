@@ -1,0 +1,136 @@
+.container {
+	margin: 0 auto;
+	padding: 0 !important;
+	width: 720rpx !important;
+	background-color: #fff !important;
+	/* font-family: lingyuehei; */
+}
+
+uni-page-wrapper {
+	width: 800rpx !important;
+}
+
+uni-textarea.form-control {
+	height: 100px;
+	padding-left: 8px !important;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.inputnobor {
+	border: none !important;
+	background-color: white !important;
+}
+
+.blueborder {
+	border: 1px solid #78b9e1 !important;
+	margin: 3% !important;
+	box-shadow: 0.5px 0.5px 1px #78b9e1;
+}
+
+.firsttext {
+	background: #78b9e1;
+	width: auto;
+	color: white;
+}
+
+.baoming {
+	color: white;
+	background-color: #78b9e1;
+	padding: 0;
+	margin: 0;
+}
+
+#back_class {
+	width: 100upx;
+	height: 100upx;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 40upx;
+	right: 7%;
+	border-radius: 100upx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.dropwhite {
+	display: block;
+	width: 100%;
+	padding: 0.25rem 1.5rem;
+	clear: both;
+	font-weight: 400;
+	color: #212529;
+	text-align: inherit;
+	white-space: nowrap;
+	background-color: transparent;
+	border: 0;
+}
+
+.uni-input {
+	border: #cccccc 1upx solid;
+	border-radius: 10upx;
+}
+
+.applyTitle {
+	padding: 40upx;
+}
+
+.howToJoin {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.partTitle {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20upx 0;
+}
+
+.input-group {
+	width: 85%;
+	padding-right: 5%;
+	margin: 50upx auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-control {
+	width: 360upx;
+	height: 70upx;
+	border: #cccccc 1upx solid;
+	box-shadow: #888888 0 0 5upx;
+	border-radius: 10upx;
+}
+
+.applyImg {
+	width: 130upx;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.applySecond {
+	width: 600upx;
+}
+
+.uni-input-input {
+	padding-left: 8px;
+	border: 1upx solid #f8f8f8;
+	box-sizing: border-box;
+}
+
+.uni-input-input:focus {
+	outline: 0;
+	border-color: #66afe9;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}

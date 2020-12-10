@@ -1,0 +1,36 @@
+#bgimg {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.time_choose {
+	width: 92%;
+	padding: 10upx 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+.time_choose_con {
+	width: 8%;
+	padding-bottom: 8%;
+	height: 0;
+	color: #888888;
+	background-color: #FFFFFF;
+	border: #cccccc 1upx solid;
+	font-size: 35upx;
+	text-align: center;
+	border-radius: 100upx;
+}
+.time_choose_disable{
+	color: #cccccc;
+	background-color: #e5e5e5;
+}
+.time_choose_hasC {
+	color: #FFFFFF;
+	background-color: #57B5E0;
+}

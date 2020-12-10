@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="js/vue-resource-1_5_1.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="js/echarts.min.js" type="text/javascript" charset="UTF-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/chartBox.css" />
+	</head>
+	<body>
+		<div id="chartBox">
+			<div id="title">NEWX 用户统计</div>
+			<div id="chart" ref="chart"></div>
+			<div id="setting">
+				<div class="settingPanel">
+					<label class="setLabel">开始日期：</label>
+					<input class="setInput" type="range" min="0" :max="maxLength-1" step="1" v-model="begin">
+					<label class="setLabel">{{ dataUse.day[begin] }}</label>
+				</div>
+				<div class="settingPanel">
+					<label class="setLabel">结束日期：</label>
+					<input class="setInput" type="range" min="1" :max="maxLength" step="1" v-model="end">
+					<label class="setLabel">{{ dataUse.day[end-1] }}</label>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/chartBox.js" type="text/javascript" charset="UTF-8"></script>
+</html>

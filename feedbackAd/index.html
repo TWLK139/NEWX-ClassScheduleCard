@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>newx课表反馈</title>
+		<script src="js/vue.min.js"></script>
+		<script src="js/vue-resource-1_5_1.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/feedBack.css"></link>
+	</head>
+
+	<body>
+		<div id="feedBackBox">
+			<div id="title">NEWX用户反馈</div>
+			<div class="mesDiv" v-for="(info, i) in list" :key="i">
+				<div class="summary">
+					<div class="series" :style="[{'font-size': i>8?(i>98?'45px':'67px'):'90px'}]">{{ i+1 }}</div>
+					<div class="topMes">
+						<div class="titleMes">{{ info.title }}</div>
+						<div class="typeMes">{{ info.type }}</div>
+					</div>
+				</div>
+				<div class="contentMes">{{ info.content }}</div>
+				<div class="bottom">
+					<div>学号：{{ info.username }}</div>
+					<div>QQ: {{ info.qq }}</div>
+					<div>时间：{{ info.create_time }}</div>
+					<div>ID: {{ info.id }}</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/feedBack.js"></script>
+</html>

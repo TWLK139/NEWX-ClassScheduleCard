@@ -1,0 +1,216 @@
+#bgimg {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.box_grade {
+	width: 100%;
+	margin: 60upx auto 0 auto;
+	box-shadow: rgb(126, 126, 126) 0upx 0upx 20upx;
+	background-color: rgba(255, 255, 255, 0.5);
+	overflow: hidden;
+}
+
+.flex_box_grade {
+	width: 94%;
+	margin: 10upx auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: #979797 4upx solid;
+	padding-bottom: 4upx;
+}
+
+.trem_name {
+	font-size: 33upx;
+	color: #7F7F7F;
+}
+
+.ask_image {
+	width: 40upx;
+	margin-left: 0upx;
+}
+
+.trem_season {
+	font-size: 33upx;
+	margin-left: 200upx;
+}
+
+.image_grade {
+	width: 30upx;
+	height: 30upx;
+	margin-right: 10upx;
+}
+
+.click_load_button {
+	width: 80%;
+	padding: 5% 10%;
+	font-size: 40upx;
+	color: #8F8F94;
+	text-align: center;
+}
+
+.no_data_box {
+	width: 80%;
+	padding: 5% 10%;
+	font-size: 40upx;
+	color: #8F8F94;
+	text-align: center;
+}
+
+.choose_grass {
+	color: #6aaf3b;
+}
+
+.choose_harvest {
+	color: #e2b709;
+}
+
+.choose_90 {
+	transform: rotate(90deg);
+}
+
+.choose_minus90 {
+	transform: rotate(-90deg);
+}
+
+#saveButton{
+	width: 220upx;
+	height: 100upx;
+	border-radius: 100upx;
+	background-color: #3681ba;
+	position: fixed;
+	bottom: 50upx;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 38upx;
+	font-weight: 700;
+	opacity: 0.8;
+}
+
+.exam_detail_box {
+	width: 95%;
+	margin: 20upx auto;
+	background-color: #FFFFFF;
+	border-radius: 10upx;
+	box-shadow: #8F8F94 0upx 0upx 10upx;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.4s ease;
+}
+
+.flex_exam_box {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.exam_icon{
+	width: 120upx;
+	background-color: red;
+	color: #FFFFFF;
+	height: 50upx;
+	font-size: 26upx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 10upx;
+	border-radius: 10upx;
+}
+
+.exam_edit_img {
+	width: 60upx;
+}
+
+.exam_name {
+	width: 360upx;
+	color: #2C405A;
+	font-size: 35upx;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.exam_type{
+	width: 140upx;
+	font-size: 35upx;
+	text-align: right;
+	background-color: #f1f1f1;
+	border-radius: 10upx;
+	color: #888888;
+}
+
+.exam_mes_word {
+	width: 95%;
+	margin: 0 auto;
+	justify-content: space-between;
+	font-size: 38upx;
+}
+
+.exam_mes_word_title {
+	font-size: 35upx;
+	color: #AAAAAA;
+}
+
+.flex_exam_box_con {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+}
+
+.exam_mes_place {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.choose_unfinish {
+	width: 45%;
+	color: #FFFFFF;
+	font-size: 28upx;
+	border-radius: 10upx;
+	justify-content: center;
+	align-items: center;
+	background-color: #3681ba;
+	opacity: 0.8;
+}
+
+.choose_heght_mid{
+	height: 180upx;
+}
+.choose_heght_min{
+	height: 70upx;
+}
+.choose_heght_min_min {
+	height: 56upx;
+}
+.choose_finished{
+	width: 220upx;
+	height: 50upx;
+	position: absolute;
+	bottom: 10upx;
+	right: 10upx;
+	background-color: #39B54A;
+	opacity: 1;
+}
+
+.exam_more{
+	width: 95%;
+	margin: 0 auto;
+	font-size: 35upx;
+}

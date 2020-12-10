@@ -1,0 +1,456 @@
+#class_container {
+	width: 100%;
+	height: 100%;
+}
+
+#canApply {
+	width: 600upx;
+	height: 800upx;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	border-radius: 30upx;
+	overflow: hidden;
+}
+
+#closeApply {
+	width: 100upx;
+	height: 100upx;
+	font-size: 80upx;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 100upx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.statusBar {
+	background-image: linear-gradient(to right, #ededed, #6d89c3);
+	width: 750px;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+#bgimg {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#titleDiv {
+	width: 100%;
+	padding-left: 3.4%;
+}
+
+#titleWordDiv {
+	margin-top: 6%;
+	float: left;
+	color: #76c4d8;
+}
+
+#titleBackDiv {
+	width: 8%;
+	float: right;
+	margin-top: 7%;
+	margin-right: 6%;
+	display: block;
+}
+
+
+#tableBox {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#tableTitle {
+	width: 100%;
+	height: 6%;
+	background-color: #76c4d8;
+	position: relative;
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#weekSearch {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.showAllClass {
+	width: 160upx;
+	height: 60%;
+	font-size: 25upx;
+	color: #FFFFFF;
+	border: #FFFFFF 1upx solid;
+	border-radius: 20upx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.dateSide {
+	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#subBut {
+	width: 20%;
+	height: 5%;
+	position: absolute;
+	font-size: 120%;
+	top: 1.9%;
+	right: 0;
+	color: white;
+	text-align: center;
+}
+
+#lastWeek {
+	width: 0;
+	height: 0;
+	border-width: 15upx;
+	border-style: solid;
+	border-color: transparent white transparent transparent;
+	margin: 0 auto;
+	transform: translateX(-50%);
+}
+
+#date {
+	width: 70%;
+	transform: translateY(25%);
+	height: 60%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 30upx;
+	position: relative;
+	color: white;
+	border: white 1upx solid;
+	border-radius: 20upx;
+}
+
+#pickerBox {
+	width: 100%;
+	height: 10%;
+	background-color: #f2f2f2;
+	position: relative;
+}
+
+#tremPicker {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#notice {
+	width: 100% !important;
+	height: 50upx;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translateY(100%);
+	z-index: 9;
+}
+
+#thisTremMes {
+	width: 100%;
+	height: 30%;
+	background-color: #f2f2f2;
+	color: #7f7f7f;
+	font-size: 28upx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#weekDayBox {
+	width: 100%;
+	height: 70%;
+	font-size: 30upx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #f2f2f2;
+	color: #7f7f7f;
+}
+
+.weekDayCon {
+	width: 20%;
+	height: 100%;
+	flex-shrink: 1;
+	flex-grow: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#nextWeek {
+	width: 0;
+	height: 0;
+	border-width: 15upx;
+	border-style: solid;
+	border-color: transparent transparent transparent white;
+	margin: 0 auto;
+	transform: translateX(50%);
+}
+
+#classBox {
+	width: 100%;
+	height: 94%;
+	display: flex;
+	flex-direction: row;
+}
+
+#classTimeBox {
+	width: 6%;
+	height: 100%;
+	background-color: #f2f2f2;
+	position: relative;
+}
+
+#classTimeDetail {
+	width: 0upx;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 20;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#weekDayWord {
+	width: 100%;
+	height: 10%;
+	font-size: 22upx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.classTimeDiv {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	font-size: 30upx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#classColumn {
+	width: 94%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+#classColumnSwiper {
+	width: 100%;
+	height: 100% !important;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: #f2f2f2;
+}
+
+#choseWeek {
+	width: 100%;
+	height: 0upx;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 10;
+}
+
+.choseWeekNumBox {
+	width: 100%;
+	height: 25%;
+	display: flex;
+	flex-direction: row;
+}
+
+.choseWeekNum {
+	width: 20%;
+	height: 100%;
+	font-size: 30upx;
+	font-weight: 900;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	box-shadow: #a4a4a4 0 0 5upx inset;
+}
+
+.classDiv {
+	width: 100%;
+	height: 90%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: white;
+	position: relative;
+}
+
+.classTime {
+	width: 14.2%;
+	height: 100%;
+	color: #7f7f7f;
+	flex-grow: 0;
+	flex-shrink: 0;
+	border-left: #f2f2f2 1upx solid;
+	border-bottom: #f2f2f2 1upx solid;
+	font-weight: 600;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	transition: all 0.5s ease;
+}
+
+.classSection {
+	width: 100%;
+	height: 20%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	border-bottom: #f2f2f2 1upx solid;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.each_class {
+	width: 90%;
+	margin: 5% auto;
+	height: 90%;
+	flex-shrink: 1;
+	background-color: #d09281;
+	color: #fcded5;
+	border-radius: 10upx;
+	overflow: hidden;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.class_name {
+	width: 95%;
+	height: 64%;
+	padding-right: 50upx;
+	margin: 0 auto;
+	font-size: 28upx;
+	overflow-y: scroll;
+	font-weight: normal;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.class_place {
+	width: 95%;
+	height: 32%;
+	padding-right: 10px;
+	margin: 0 auto;
+	font-size: 22upx;
+	overflow-y: scroll;
+	font-weight: normal;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+#applyMore {
+	width: 100%;
+	height: 120upx;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 40upx;
+	font-weight: 800;
+	color: #FFFFFF;
+}
+
+#loadingMask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#loading {
+	width: 440upx;
+	height: 250upx;
+	background-color: rgba(3, 3, 3, 0.7);
+	border-radius: 30upx;
+	margin-top: -100upx;
+}
+
+#loadingTitle {
+	width: 100%;
+	height: 60upx;
+	padding-top: 40upx;
+	color: #FFFFFF;
+	font-size: 40upx;
+	text-align: center;
+}
+
+#loadingProgram {
+	width: 85%;
+	height: 40upx;
+	margin: 50upx auto 0 auto;
+	border-radius: 100upx;
+	border: #FFFFFF 2upx solid;
+	position: relative;
+	overflow: hidden;
+}
+
+#loadingProgram_line {
+	width: 100%;
+	height: 100%;
+	left: -100%;
+	border-radius: 100upx;
+	position: absolute;
+	background-color: #FFFFFF;
+	/* transition: all 0.2s ease-in-out; */
+}
